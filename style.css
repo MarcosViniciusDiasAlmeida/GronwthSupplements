@@ -1,0 +1,148 @@
+/* Resetando estilo padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e estrutura geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 150px; /* Ajuste o tamanho da logo conforme necessário */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.banner-text h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 20px;
+}
+
+/* Produtos */
+.produtos {
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.produto-item {
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.produto-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.produto-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.produto-item p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.produto-item button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.produto-item button:hover {
+    background-color: #555;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social {
+    margin-top: 10px;
+}
+
+footer .social a {
+    margin: 0 10px;
+    color: white;
+    font-size: 18px;
+}
+
+footer .social a:hover {
+    color: #ddd;
+}
