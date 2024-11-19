@@ -28,7 +28,7 @@ header {
 }
 
 header .logo img {
-    width: 150px; /* Ajuste o tamanho da logo conforme necessário */
+    width: 150px;
 }
 
 nav ul {
@@ -64,6 +64,9 @@ nav ul li a {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .banner-text h1 {
@@ -87,20 +90,34 @@ nav ul li a {
     margin-bottom: 30px;
 }
 
+.produtos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
 .produto-item {
-    display: inline-block;
-    width: 30%;
+    width: 300px;
     padding: 10px;
     margin: 10px;
     background-color: #fff;
     border: 1px solid #ddd;
-    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produto-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .produto-item img {
     width: 100%;
     height: auto;
     margin-bottom: 15px;
+    border-radius: 10px;
 }
 
 .produto-item h3 {
@@ -119,6 +136,7 @@ nav ul li a {
     padding: 10px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .produto-item button:hover {
